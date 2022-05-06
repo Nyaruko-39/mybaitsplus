@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mybaitsplus.mapper.UserMapper"> <!--对应的接口全类名-->
+    <select id="selectByMyself" resultType="User">
+        select * from t_user where id > #{id}
+    </select>
+
+    <select id="selectByAge" resultType="User">
+        select * from t_user where age > #{age}
+    </select>
+</mapper>
