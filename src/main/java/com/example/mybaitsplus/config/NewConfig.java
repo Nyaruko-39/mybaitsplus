@@ -1,5 +1,7 @@
 package com.example.mybaitsplus.config;
 
 public class NewConfig {
-  System.out.println("pull");
+  public static void main(String[] args) {
+    System.out.println("pull");
+  }
 }
